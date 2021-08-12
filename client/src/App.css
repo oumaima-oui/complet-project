@@ -128,16 +128,15 @@ footer{
 }
 .valign-wrapper {
     background-image: url("https://alphaomega.digital/wp-content/uploads/2020/06/web_development-1.jpg");
-    background-color: #cccccc;
-    width: 1000vh;
-    background-position: left;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .title{
-    text-align: center;
+    text-align: left;
     color: blue;
 }
 /*contact*/
@@ -147,8 +146,10 @@ footer{
     width:50%;
     margin-left: 400px;
     background-image: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&amp;ext=jpg");
+    background-position: right;
     background-position: center;
     background-size: cover;
+
 }
 
 h1{
@@ -179,12 +180,16 @@ label{
     text-align: center;
 }
 /**** service****/
-
-img{
-    height:150px;
-    width:100%;
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: black;
 }
-  
+p{
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+}
 .item{
     padding-left:5px;
     padding-right:5px;
@@ -199,7 +204,7 @@ img{
     cursor:pointer;
 }
 .item-card-title i{  
-    font-size:15px;
+    font-size:25px;
     transition:1s;
     cursor:pointer;
     color:#ffa710
@@ -207,15 +212,36 @@ img{
 .card-title i:hover{
     transform: scale(1.25) rotate(100deg); 
     color:#18d4ca;
-    
 }
+
+img{
+    height:250px;
+    width:100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    padding: 0px;
+    border-radius: 3px;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   max-width: 550px;
+   min-width: 500px;
+   border-radius: 15px;
+   color: #333;
+   margin: 10px;
+   cursor: pointer;
+   margin-left: 150px;
+}
+
 .card:hover{
     transform: scale(1.05);
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
 }
-.card-text{
-    height:80px;  
-}
+
   
 .card::before, .card::after {
     position: absolute;
@@ -238,15 +264,33 @@ img{
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
     transform: scale3d(1, 1, 1);
 }
-
-  
-/*footer*/
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #1f5156;
-    color: white;
+.btn {
+    cursor: pointer;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+}
+/*About us*/
+.right {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://best.systems/images/emtuong.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.left{
+    text-align: center;
+    margin-top: 25vh;
+    margin-left: 50px;
+}
+h1{
+    font-size: 45px;
+    color: blue;
     text-align: center;
 }
+p{
+    font-size: 30px;
+    color: black;
+}
+

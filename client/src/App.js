@@ -22,6 +22,8 @@ import { Service } from "./components/layout/Service";
 import { Expert } from "./components/layout/Expert";
 import { Contact } from "./components/layout/Contact";
 import { Footer }  from "./components/layout/Footer";
+import { About}  from "./components/layout/About";
+
 
 
 import './App.css';
@@ -65,6 +67,7 @@ class App extends Component {
               <Route path="/service" component={Service} />
               <Route path="/expert" component={Expert} />
               <Route path="/contact" component={Contact} />
+              <Route path="/about" component={About} />
               <Route exact path="/footer" component={Footer} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>

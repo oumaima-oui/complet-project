@@ -10,10 +10,9 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-            <h2 className="title">Coccinella Digi-Mark</h2>
-              <span style={{ fontFamily: "monospace" ,"font-size":'25px', "color":'gray'}}>YOUR IMAGE, OUR PASSION</span> 
+              <span style={{ fontFamily: "monospace" ,"font-size":'35px', "color":'gray',backgroundColor:'yellow'}}>YOUR IMAGE, OUR PASSION</span> 
             </h4>
-            <p style={{ fontFamily: "monospace" ,"font-size":'20px', "color":'gray'}}>
+            <p style={{ fontFamily: "monospace" ,"font-size":'25px', "color":'gray', backgroundColor:'yellow'}}>
             STRATEGY,CREATIVITY,MATKETING,ADS
             </p>
             <br />
